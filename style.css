@@ -211,6 +211,8 @@ figcaption {
     opacity: 0; /* Start transparent */
     /* NOTE: We keep opacity/transform here for the content's separate animation */
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    max-height: 85vh; /* Limit height to 85% of viewport height */
+    overflow-y: auto; /* Enable vertical scrollbar ONLY if content exceeds max-height */
 }
 
 .overlay.visible .overlay-content {
