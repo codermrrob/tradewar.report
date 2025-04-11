@@ -27,6 +27,16 @@ header, main, footer {
     border-radius: 8px;
 }
 
+/* Read Time Style */
+.read-time {
+    font-size: 0.9em; /* Slightly smaller */
+    color: #555;      /* Grey color */
+    font-style: italic;
+    margin-top: 15px;  /* Add some space above it */
+    margin-bottom: 0; /* Reset bottom margin if needed */
+    text-align: center; /* Keep it centered like the header */
+}
+
 header {
     text-align: center;
     border-bottom: 2px solid #eee;
