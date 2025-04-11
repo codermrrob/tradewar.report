@@ -1,0 +1,165 @@
+/* Basic Reset & Defaults */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth; /* For potential future navigation */
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+/* Layout & Structure */
+header, main, footer {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+header .intro {
+    font-style: italic;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto; /* Center intro paragraph */
+}
+
+section {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee; /* Separator between sections */
+}
+
+section:last-of-type {
+    border-bottom: none; /* No border for the last section */
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #777;
+    background: none;
+    box-shadow: none;
+}
+
+/* Headings & Text */
+h2 {
+    color: #34495e;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+blockquote {
+    margin: 20px 0;
+    padding: 15px 20px;
+    background-color: #ecf0f1;
+    border-left: 5px solid #3498db;
+    font-style: italic;
+    color: #34495e;
+}
+
+/* Images & Figures */
+figure {
+    margin: 20px 0;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto; /* Center image and add space below */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: #555;
+    font-style: italic;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header, main, footer {
+        padding: 15px;
+        margin: 15px auto;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
+         font-size: 15px; /* Slightly smaller font on very small screens */
+    }
+
+     header, main, footer {
+        padding: 10px;
+        margin: 10px auto;
+        border-radius: 4px; /* Less pronounced radius */
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    ul, ol {
+        margin-left: 15px; /* Reduce indent */
+    }
+
+    blockquote {
+        padding: 10px 15px;
+    }
+}
