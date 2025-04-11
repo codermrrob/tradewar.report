@@ -191,20 +191,23 @@
         const learnMoreTrigger = document.getElementById('trigger-sensitivity');
         const overlay = document.getElementById('overlay-sensitivity');
         const closeButton = document.getElementById('close-sensitivity');
+        const bodyElement = document.body; // Get the body element
 
         // Function to open the overlay
         function openOverlay() {
+            bodyElement.classList.add('body-no-scroll'); // Add class to body
             overlay.classList.add('visible');
         }
 
         // Function to close the overlay
         function closeOverlay() {
+            bodyElement.classList.remove('body-no-scroll'); // Remove class from body
             overlay.classList.remove('visible');
         }
 
         // Event listener for the trigger link
         learnMoreTrigger.addEventListener('click', function(event) {
-            event.preventDefault(); // Stop link default behavior
+            event.preventDefault();
             openOverlay();
         });
 
@@ -213,7 +216,6 @@
 
         // Event listener to close when clicking outside the content area
         overlay.addEventListener('click', function(event) {
-            // Check if the click target is the overlay background itself
             if (event.target === overlay) {
                 closeOverlay();
             }
